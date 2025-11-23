@@ -1,0 +1,12 @@
+[package]
+name = "rgb-ctrl"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+evdev = { version = "0.13.2", default-features = false, features = ["tokio"] }
+futures = { version = "0.3.31", default-features = false }
+openrgb2 = { version = "0.3.0", default-features = false }
+palette = { version = "0.7.6", default-features = false, features = ["std"] }
+rand = { version = "0.9.2", default-features = false, features = ["thread_rng"] }
+tokio = { version = "1.48.0", default-features = false, features = ["macros", "rt-multi-thread", "time"] }
